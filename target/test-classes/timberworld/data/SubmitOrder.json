@@ -1,0 +1,21 @@
+[
+{
+"email" : "bernagokcebilge@gmail.com",
+"password": "Abcd1234",
+"productName": "Sofa Vissle",
+"name": "berna",
+"credit": "44444",
+"expd": "01/28",
+"cvv": "111"
+},
+{
+"email" : "bernagokcebilge@gmail.com",
+"password": "Abcd1234",
+"productName": "Double sofa",
+"name": "berna",
+"credit": "44444",
+"expd": "01/28",
+"cvv": "111"
+}
+]
+

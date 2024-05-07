@@ -59,7 +59,7 @@
   </dependencies>
   <profiles>
 	  <profile>
-		  <id>Smoke</id>
+		  <id>Regression</id>
 		  <build>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
@@ -89,6 +89,44 @@
         <configuration>
           <suiteXmlFiles>
             <suiteXmlFile>testSuites/submitOrder.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+      </plugins>
+      </pluginManagement>
+		  </build> 
+	  </profile>
+	  <profile>
+		  <id>SubmitOrder2</id>
+		  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+		  <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.2.5</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>testSuites/submitOrder2.xml</suiteXmlFile>
+          </suiteXmlFiles>
+        </configuration>
+      </plugin>
+      </plugins>
+      </pluginManagement>
+		  </build> 
+	  </profile>
+	   <profile>
+		  <id>ErrorValidations</id>
+		  <build>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+		  <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>3.2.5</version>
+        <configuration>
+          <suiteXmlFiles>
+            <suiteXmlFile>testSuites/errorValidations.xml</suiteXmlFile>
           </suiteXmlFiles>
         </configuration>
       </plugin>

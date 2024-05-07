@@ -4,20 +4,10 @@
 	<listeners>
 		<listener class-name="timberworld.TestComponents.Listeners"/>
 	</listeners>
-  <test name="Submit Order Test">
-    <classes>
-      <class name="timberworld.tests.SubmitOrderTest"/>
-    </classes>
-  </test> <!-- Test -->
-   <test name="Submit Order Test2">
-    <classes>
-      <class name="timberworld.tests.SubmitOrder2Test"/>
-    </classes>
-      </test> <!-- Test -->
   <test name="Error Validation Tests">
     <classes>
       <class name="timberworld.tests.ErrorValidationTest"/>
        <class name="timberworld.tests.ErrorValidation2Test"/>
     </classes>
-  </test>
+  </test> <!-- Test -->
 </suite> <!-- Suite -->

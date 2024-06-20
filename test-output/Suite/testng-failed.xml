@@ -4,26 +4,15 @@
   <listeners>
     <listener class-name="timberworld.TestComponents.Listeners"/>
   </listeners>
-  <test name="Submit Order Test(failed)">
+  <test name="Error Validation Tests(failed)">
     <classes>
-      <class name="timberworld.tests.SubmitOrderTest">
+      <class name="timberworld.tests.ErrorValidation2Test">
         <methods>
-          <include name="submitOrder"/>
+          <include name="ErrorValidation2" invocation-numbers="0"/>
           <include name="tearDown"/>
           <include name="launchApplication"/>
         </methods>
-      </class> <!-- timberworld.tests.SubmitOrderTest -->
+      </class> <!-- timberworld.tests.ErrorValidation2Test -->
     </classes>
-  </test> <!-- Submit Order Test(failed) -->
-  <test name="Error Validation Test(failed)">
-    <classes>
-      <class name="timberworld.tests.ErrorValidationTest">
-        <methods>
-          <include name="ErrorValidation"/>
-          <include name="tearDown"/>
-          <include name="launchApplication"/>
-        </methods>
-      </class> <!-- timberworld.tests.ErrorValidationTest -->
-    </classes>
-  </test> <!-- Error Validation Test(failed) -->
+  </test> <!-- Error Validation Tests(failed) -->
 </suite> <!-- Failed suite [Suite] -->

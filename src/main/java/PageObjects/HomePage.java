@@ -32,16 +32,17 @@ public class HomePage extends AbstractComponents {
 	@FindBy(css=".search-box-element__text")
 	List<WebElement> products;
 	
-	public List<WebElement> searchProduct()
+	public List<WebElement> searchProduct() throws InterruptedException
 	{
+		waitForWebElementToBeClickable(searchBox);
 		searchBox.sendKeys("bed");
-		searchButton.click();
 		return products;
 	}
 	public ProductPage clickonProduct(String productName)
 	{
-		WebElement product = products.stream().filter(prod->prod.findElement(By.cssSelector("p:nth-child(1)")).getText().equals(productName))
+		WebElement product = products.stream().filter(prod->prod.findElement(By.cssSelector("p:first-child")).getText().equals(productName))
 				.findFirst().orElse(null);
+		waitForWebElementToBeClickable(product);
 		product.click();
 		return new ProductPage(driver);
 	}

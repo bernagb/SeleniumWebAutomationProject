@@ -15,10 +15,11 @@ public class ErrorValidation2Test extends BaseTest {
 	String password = "Abcd1234";
 	String productName = "Queen Bed";*/
 	@Test(dataProvider="getData")
-	public void ErrorValidation2(String email, String password, String productName, String name, String credit, String expd, String cvv)
+	public void ErrorValidation2(String email, String password, String productName, String name, String credit, String expd, String cvv) throws InterruptedException
 	{
 		SignInPage signinPage = homepage.goToSignin();
 		signinPage.signin(email, password);
+		Thread.sleep(3000);
 		homepage.searchProduct();
 		ProductPage productpage = homepage.clickonProduct(productName);
 		productpage.addProductToCart();

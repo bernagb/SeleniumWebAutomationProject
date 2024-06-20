@@ -19,7 +19,7 @@ public class ProductPage extends AbstractComponents {
 	}
 	
 
-	@FindBy(css=".animation-icon-wrapper ")
+	@FindBy(css=".animation-icon-wrapper")
 	WebElement addToCart;
 	
 	public void addProductToCart()

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="timberworld.tests.SubmitOrder2Test">
+      <class name="timberworld.tests.ErrorValidation2Test">
         <methods>
-          <include name="SubmitOrder2" invocation-numbers="0"/>
+          <include name="ErrorValidation2" invocation-numbers="0"/>
           <include name="tearDown"/>
           <include name="launchApplication"/>
         </methods>
-      </class> <!-- timberworld.tests.SubmitOrder2Test -->
+      </class> <!-- timberworld.tests.ErrorValidation2Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
